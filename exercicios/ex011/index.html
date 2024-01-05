@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem Dinâmica</h1>
+    <hr>
+
+    <p>
+        Tente abrir esse site em vários dispositivos diferentes ou simplismante aumente e dimunua o tamanho do seu navegador.
+    </p>
+
+    <!--Com esses comandos, podemos trocar entre imagens de diferentes tamanhos dependendo do tamanho da tela-->
+    <picture>
+        <source media="(max-width: 750px)" srcset="image/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="image/foto-m.png" type="image/png">
+        <img src="image/foto-g.png" alt="Imagem Flexífel">
+    </picture>
+    <!--TEM que ser colocado de forma decrescente em relação ao tamanho-->
+
+    <h1>Reproduzindo Áudios</h1>
+    <p>Vamos aprender a reproduzir audios em HTML5.</p>
+
+    <audio src="midia/Audios_HA0WV9D9.mp3" controls></audio>
+    <!-- Tipos de audio: MP3, WAV, OGG-->
+
+    <audio preload="metadata" autoplay controls loop>
+
+        <source src="midia/SnapInsta.io - Cunamata - Fala Baixo (Clipe Oficial) Prod. Dj Don-gui (128 kbps).mp3" type="audio/mpeg">
+
+        <source src="midia/SnapInsta.io - Cunamata - Fala Baixo (Clipe Oficial) Prod. Dj Don-gui (128 kbps).ogg" type="audio/ogg">
+
+        <source src="midia/SnapInsta.io - Cunamata - Fala Baixo (Clipe Oficial) Prod. Dj Don-gui (128 kbps).wav" type="audio/wav">
+
+        <p> 
+            Infelizmente seu navegador é incapaz de reproduzir áudio!
+
+            <a href="midia/SnapInsta.io - Cunamata - Fala Baixo (Clipe Oficial) Prod. Dj Don-gui (128 kbps).mp3">Baixar o arquivo MP# do áudio</a>
+        </p>
+
+    </audio>
+
+</body>
+</html>
