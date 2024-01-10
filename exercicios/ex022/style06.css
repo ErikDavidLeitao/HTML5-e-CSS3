@@ -1,7 +1,6 @@
 body{
-    /*
     height: 100vh;
-    background-color: black;
+    /*background-color: black;
     background-image: url('images/wallpaper002.jpg');
     background-position: center center;
     background-repeat: no-repeat;
@@ -10,23 +9,24 @@ body{
     background-size: cover;
 
     permite que só o conteúdo role, mas não a img de fundo
-    background-attachment: fixed;
+    background-attachment: fixed;*/
 
+    /*
     shorthand - background
     
     color > image > position > repeat > [size] > attachment
     */
 
     background: black url('images/wallpaper002.jpg') center center no-repeat fixed;
+    background-size: cover;
 }
 
 main {
     background-color: white;
-    max-width: 800px;
+    max-width: 400px;
     padding: 10px;
     margin: auto;
     border: 2px solid black;
     border-radius: 15px;
 }
 
-/* min= 8:31 */

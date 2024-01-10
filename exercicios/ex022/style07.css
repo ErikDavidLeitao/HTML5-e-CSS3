@@ -1,0 +1,27 @@
+#container {
+    background-image: url('images/target001.png');
+    background-size: 100% 100%;
+
+    /*o container naturalmente tem uma posição relativa*/
+    position: relative;
+    height: 96vh;
+    padding: 10px;
+    background-color: #861386ce;
+}
+
+#conteudo {
+    background-image: url('images/target001.png');
+    background-size: 100% 100%;
+
+    /* a regra é: o que esta por fora (roxo) é relativo, já o que esta contido (amarelo) é absoluto */
+    position: absolute;
+    height: 200px;
+    width: 400px;
+    background-color: #e9e91ed5;
+
+    left: 50%;
+    top: 50%;
+
+    /*se colocasse números positivos, ele se moveria mais para a direita e para baixo, mas com os negativos, conseguimos fazer ele voltar um pouco para trás, deixando tudo centralizado*/
+    transform: translate(-50%, -50%);
+}
