@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+
+    <style>
+        fieldset {
+            max-width: 60vw;
+            padding: 10px;
+
+            background-color: #c1e0fae8;
+            border: 2px solid black;
+            border-radius: 15px;
+        }
+
+        #fiel01 {
+            margin-top: 20px;
+        }
+
+        legend {
+            background-color: white;
+            border: 2px solid black;
+            border-radius: 8px;
+
+            padding: 4px;
+        }
+
+        .bot {
+            padding: 10px;
+            width: 150px;
+
+            background-color: #9fd8eecc;
+            border: 2px solid black;
+            border-radius: 15px;
+            font-size: medium;
+            font-weight: bold;
+        }
+
+        .bot:hover {
+            background-color: white;
+            border: 2px solid #6d85f0cc;
+        }
+
+    </style>
+
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+
+    <form action="cadastro.php" method="get" autocomplete="on">
+
+        <fieldset>
+
+            <legend>Sexo</legend>
+
+            <!-- Todos os botões de redio tem que ter o mesmo name -->
+            
+            <input type="radio" name="sexo" id="isxmas" checked> <label for="isxmas">Masculino</label> <br> 
+
+            <input type="radio" name="sexo" id="isxfem"> <label for="isxfem">Feminino</label> <br>
+
+        </fieldset>
+
+        <fieldset id="fiel01">
+
+            <legend>Esportes Favoritos</legend>
+
+            <input type="checkbox" name="esfut" id="iesfut" checked> <label for="iesfut">Futebol</label> <br> 
+            <input type="checkbox" name="esbas" id="iesbas"> <label for="iesbas">Basquete</label> <br>
+            <input type="checkbox" name="esnat" id="iesnat"> <label for="iesnat">Natação</label> <br>
+            <input type="checkbox" name="esten" id="iesten"> <label for="iesten">Tênis</label> <br>
+            <input type="checkbox" name="eswes" id="ieswes" checked> <label for="ieswes">Wrestling</label>
+
+        </fieldset>
+
+        <p>
+            <input type="submit" value="Enviar" class="bot">
+            <input type="reset" value="Limpar" class="bot">
+        </p>
+
+    </form>
+
+</body>
+</html>
