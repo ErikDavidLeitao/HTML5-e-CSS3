@@ -5,13 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media Query</title>
 
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
     <link rel="stylesheet" href="styles/style.css">
 
 </head>
 <body>
     <header>
         <h1>Meu site</h1>
-        <menu>
+
+        <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
+        <menu id="itens">
             <ul>
                 <li><a href="#">Opção 01</a></li>
                 <li><a href="#">Opção 02</a></li>
@@ -19,6 +23,7 @@
                 <li><a href="#">Opção 04</a></li>
                 <li><a href="#">Opção 05</a></li>
             </ul>
+
         </menu>
     </header>
 
@@ -34,8 +39,6 @@
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. A veniam sint architecto fugit optio ipsa accusantium quae eligendi ipsum eius ea porro, suscipit voluptatem odio nemo corrupti, explicabo sapiente nesciunt ratione autem commodi unde sit? Cupiditate eveniet aperiam aspernatur, odit numquam iure maiores quas dolorum voluptate velit, explicabo optio cum illum saepe ea at. Dolorem suscipit temporibus quis, odit perspiciatis qui possimus culpa magnam animi sit ab vero pariatur placeat deleniti minus ipsam, numquam quam!
             </p>
 
-            <img src="images/caf650c8573144a8079752a0b27ae224.jpg" alt="">
-
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti corporis repudiandae similique dolorem quisquam dolor, consequatur maiores, aut exercitationem magnam dignissimos dolore nemo possimus provident explicabo officiis totam neque quos laborum repellendus! Suscipit deleniti, deserunt voluptates blanditiis necessitatibus dicta! Nemo aut, omnis ut nostrum at esse nesciunt, ipsam sit ullam ab velit iure dolor quod commodi molestiae facere beatae eaque labore qui porro inventore quia consequuntur, quidem magnam! Eos ullam quibusdam quaerat molestiae iste sit ut vitae perferendis temporibus est facere, dolorem magnam sequi tenetur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur architecto harum porro autem. Repudiandae nisi itaque soluta iure, debitis, eum dolores quasi, rerum accusamus culpa hic consectetur inventore libero natus!
             </p>
@@ -49,5 +52,16 @@
             </p>
         </article>
     </main>
+
+    <script>
+        function clickMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+    </script>
+
 </body>
 </html>
